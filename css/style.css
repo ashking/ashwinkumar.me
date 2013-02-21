@@ -1,0 +1,171 @@
+/* 
+    Document   : style
+    Created on : Feb 20, 2013, 8:45:41 PM
+    Author     : Ashwin
+    Description:
+        Ofcourse, for ashwinkumar.me.
+*/
+
+@import url('fonts/fonts.css');
+
+body {
+    background: #ffdd00;
+    font-family: 'MisoRegular';
+}
+
+.sp-container {
+    width: 900px;
+    height: 400px;
+    position: relative;
+    margin: 80px auto 0px auto;
+}
+.sp-content {
+    width: 100%;
+    position: relative;
+}
+
+.sp-wrap {
+	width: 400px;
+	padding: 0px 25px;
+	height: 100%;
+	text-align: right;
+	font-size: 80px;
+	line-height: 90px;
+	float: left;
+	position: relative;
+	background: #ffdd00;
+	overflow: hidden;
+}
+
+a.sp-top {
+    text-decoration: none;
+    color: #000;
+    animation: fadein 5s;
+    -webkit-animation: fadein 5s;
+    
+}
+
+a.sp-top:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+svg {
+    fill: #ffdd00;
+    pointer-events: all;
+}
+svg:hover { 
+    fill: #000;
+    pointer-events: all;
+}
+
+#centered {
+  height: 100%;
+  height: 480px;
+  width: 400px;
+  position: absolute; top: 50%; left: 50%;
+  margin-left: -200px; margin-top: -100px;
+}
+
+.other {
+  width: 200px; height: 100px;
+  position: relative; top: -150px; left: 180px;
+}
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 1s;
+     -moz-transition-duration: 1s;
+      -ms-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+.set1{
+    height:100px;
+    width: 100px;
+}
+
+.set2{
+    height:150px;
+    width: 150px;
+}
+
+.set3{
+    height:200px;
+    width: 200px;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
