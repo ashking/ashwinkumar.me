@@ -1,0 +1,19 @@
+name: Ashwin kumar
+markdown: redcarpet
+pygments: true
+
+url: "http://ashwinkumar.me"
+baseurl: "/"
+
+permalink: /posts/:title
+
+description: "Writings by Ashwin kumar. Ashwin works & loves product development."
+keywords: "Writings, startup engineering"
+main_title: "Ashwin's playground"
+
+
+github: https://github.com/ashwin-kumar
+linkedin: http://www.linkedin.com/in/ashwinkumark
+google: https://plus.google.com/104488956102051410647/posts
+twitter: https://twitter.com/ashwinkumar_k
+facebook: https://www.facebook.com/ashwinkumark10

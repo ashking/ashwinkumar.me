@@ -1,0 +1,20 @@
+---
+layout: default
+title: Posts
+---
+
+<hr></hr>
+<div class="site-content">
+  <div class="content">
+    <div class="entry-content">
+      <ul class="posts">
+        {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url }}" title="Permalink to {{ site.baseurl }}{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+          <span>{{ post.date | date_to_string }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
