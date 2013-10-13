@@ -290,3 +290,35 @@ ul.posts span {
 .post pre.terminal code {
   background-color: #EEE;
 }
+
+
+/*****************************************************************************/
+/*
+/* Scroll back to top
+/*
+/*****************************************************************************/
+
+#back-top {
+  position: fixed;
+  bottom: 60px;
+  right: 0;
+}
+
+#back-top a {
+  width: 108px;
+  display: block;
+  text-align: center;
+  font: 14px/100% Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #772525;
+}
+
+#back-top a:hover {
+  color: #000;
+}
+
+#back-top a:hover span {
+  background-color: #777;
+}
