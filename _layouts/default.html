@@ -9,19 +9,19 @@
   <title>Ashwin kumar</title>
   {% endif %}
 
-  {% if page.meta_description %}
-  <meta name="description" content="{{ page.meta_description }}" />
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}" />
+  {% else %}
+  <meta name="description" content="{{ site.description }}" />
   {% endif %}
   <meta name="viewport" content="width=device-width">
 
-  <!-- syntax highlighting CSS -->
   <link rel="stylesheet" href="/css/syntax.css">
 
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="/css/main.css">
   <script type="text/javascript"> 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-38684144-1']);
+  _gaq.push(['_setAccount', '{{site.google-analytics}}']);
   _gaq.push(['_trackPageview']);
 
   (function() {

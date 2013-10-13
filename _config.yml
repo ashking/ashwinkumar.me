@@ -7,9 +7,11 @@ baseurl: "/"
 
 permalink: /posts/:title
 
-description: "Writings by Ashwin kumar. Ashwin works & loves product development."
-keywords: "Writings, startup engineering"
+description: "You will find my writings here. I love working on Product development and Software engineering."
+keywords: "Writings, Startup engineering, Product development"
 main_title: "Ashwin's playground"
+
+google-analytics: "UA-38684144-1"
 
 
 github: https://github.com/ashwin-kumar
