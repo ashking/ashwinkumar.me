@@ -6,6 +6,7 @@ url: "http://ashwinkumar.me"
 baseurl: "/"
 
 permalink: /posts/:title
+projects: /projects
 
 description: "You will find my writings here. I love working on Product development and Software engineering."
 keywords: "Writings, Startup engineering, Product development"
