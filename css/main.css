@@ -358,7 +358,7 @@ ul.posts span {
 
 .navbar-home{
   margin-top: 120px;
-  z-index: 6;
+  z-index: 8;
   position: relative;
 }
 
@@ -391,4 +391,16 @@ text-decoration: none;
 
 .site .home{
   height: 300px;
+}
+
+.site .home-name{
+  z-index: 7;
+position: relative;
+text-align: center;
+font-weight: 700;
+font-size: 50px;
+letter-spacing: -0.04em;
+padding-top: 70px;
+padding-bottom: 40px;
+color: #595958;
 }
