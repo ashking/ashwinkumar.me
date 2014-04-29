@@ -48,3 +48,16 @@ layout: home
        <div class='home-name'>
       <h1>Ashwin</h1>
     </div>
+
+
+    <div class='post-list'>
+      <ul class='posts'>
+        {% for post in site.posts %}
+        <li class='item'>
+          <h3 class='item-title'>
+            <a href="{{ post.url }}" title="Permalink to {{ site.baseurl }}{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+          </h3>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>

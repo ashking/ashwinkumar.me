@@ -404,3 +404,33 @@ padding-top: 70px;
 padding-bottom: 40px;
 color: #595958;
 }
+
+
+.post-list {
+  z-index: 10;
+  width: 640px;
+margin: 0 auto;
+position: relative;
+  }
+
+.post-list li {
+margin-bottom: 50px;
+
+}
+
+.item-title {
+  letter-spacing: -0.02em;
+font-weight: 700;
+font-style: normal;
+display: block;
+font-size: 28px;
+line-height: 1.1;
+color: #333332;
+margin-bottom: 4px;
+
+}
+
+.item-title a {
+  text-decoration: none;
+  color: #333332;
+  }
