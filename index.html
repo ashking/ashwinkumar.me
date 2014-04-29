@@ -1,15 +1,63 @@
 ---
-layout: default
+layout: home
 ---
 
-<div class="introduction">
-            <div class="content">
-              <div class="intro">
-                <div class="text">
-                  "If you think you are too small to be effective, you have never been in the dark with a mosquito."
-                </div>
-                <div class="links">
-                </div>
-              </div>
-            </div>
+<div class="home">
           </div>
+
+<div id="blurred-image-container">
+    <div class="cover-image" style="background-image:url('img/1-.jpeg')"></div>
+    <div class="cover-image blurred-image" style="background-image:url('img/2-.jpeg');opacity:0"></div>
+</div>
+
+
+<div class="layout-foreground">
+    <img class="pic" src="img/ashwin.jpeg"/>
+</div>
+<div class="navbar-home">
+  <div class="left">
+    <table>
+      <tr>
+        <td>
+          <a class="extra" href="/">HOME</a>
+        </td>
+        <td>
+          <a class="extra" href="/posts">POSTS</a>
+        </td>
+      </tr>
+    </table>
+        
+        
+        </div>
+        <div class="right">
+<table>
+      <tr>
+        <td>
+          <a class="extra" href="/projects">PROJECTS</a>
+        </td>
+        <td>
+          <a class="extra" href="/about">ABOUT ME</a>
+        </td>
+      </tr>
+    </table>
+
+
+        
+        
+      </div></div>
+       <div class='home-name'>
+      <h1>Ashwin</h1>
+    </div>
+
+
+    <div class='post-list'>
+      <ul class='posts'>
+        {% for post in site.posts %}
+        <li class='item'>
+          <h3 class='item-title'>
+            <a href="{{ post.url }}" title="Permalink to {{ site.baseurl }}{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+          </h3>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>

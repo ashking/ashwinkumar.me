@@ -13,11 +13,13 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #FFF;
+  background-color: #FFF; 
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
   line-height: 20px;
   text-align: center;
+  margin: 0; 
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -322,3 +324,113 @@ ul.posts span {
 #back-top a:hover span {
   background-color: #777;
 }
+
+
+.cover-image { 
+    position: absolute;
+    height: 1000px;
+    background-position: center;
+    -webkit-background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.layout-foreground {
+    background: white;
+    min-height: 600px;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.pic {
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    margin-top: -60px;
+    border: 3px solid #fff;
+}
+
+
+.navbar-home{
+  margin-top: 120px;
+  z-index: 8;
+  position: relative;
+}
+
+.navbar-home .left{
+  float: left;
+  width: 50%;
+}
+
+.navbar-home .right{
+  float: right;
+  width: 50%;
+}
+
+.navbar-home table{
+  text-align: center;
+  width: 100%
+
+}
+
+.navbar-home a {
+  font-weight: 700;
+font-style: normal;
+display: inline-block;
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: .2em;
+color: #7d7d7b;
+text-decoration: none;
+}
+
+.site .home{
+  height: 300px;
+}
+
+.site .home-name{
+  z-index: 7;
+position: relative;
+text-align: center;
+font-weight: 700;
+font-size: 50px;
+letter-spacing: -0.04em;
+padding-top: 70px;
+padding-bottom: 40px;
+color: #595958;
+}
+
+
+.post-list {
+  z-index: 10;
+  width: 640px;
+margin: 0 auto;
+position: relative;
+  }
+
+.post-list li {
+margin-bottom: 50px;
+
+}
+
+.item-title {
+  letter-spacing: -0.02em;
+font-weight: 700;
+font-style: normal;
+display: block;
+font-size: 28px;
+line-height: 1.1;
+color: #333332;
+margin-bottom: 4px;
+
+}
+
+.item-title a {
+  text-decoration: none;
+  color: #333332;
+  }
