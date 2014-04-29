@@ -38,6 +38,14 @@ $(document).ready(function(){
       } else {
         $('#back-top').fadeOut();
       }
+
+       var s = $(window).scrollTop(),
+            d = $(document).height(),
+            c = $(window).height(),
+            opacityVal = (s / 150);
+
+        $('.blurred-image').css('opacity', opacityVal);
+        
     });
 
     // scroll body to 0px on click
