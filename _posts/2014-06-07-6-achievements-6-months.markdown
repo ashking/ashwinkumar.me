@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "6 Achievements 6 Months"
+title:  "6 Achievements in 6 Months"
 date:   2014-06-07
 ---
 
