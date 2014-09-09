@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div>
+            <div class="navbar navbar-default navbar-static-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><i class="fa fa-tasks"></i> Hotel Menu</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="container-fluid"></div>
+        </div>
+
+
+        <div class="container" id="menu-categories">
+                <script id="category" type="text/template">
+                    <a href=<%= '#' + category %> data-toggle='tab'><%= category %></a>
+                </script>
+                <br>
+            <div class="tab-content" id="menu-items">
+                <div class="row">
+                <script id="menu-item" type="text/template">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h3><%= name %></h3>
+                                <p><%= description %></p>
+        
+                            </div>
+                        </div>
+                    </div>
+                    
+                </script>
+                </div>
+            </div>
+        </div>
+        <script src="lib/underscore.js"></script>
+        <script src="lib/jquery-2.1.1.js"></script>
+        <script src="lib/bootstrap.js"></script>
+        <script src="lib/backbone.js"></script>
+        <script src="js/app.js"></script>
+        
+    </body>
+</html>
