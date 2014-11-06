@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>CSS changer</title>
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+
+<body class="red">
+
+	<form>
+		<input type="submit" onclick="switch_style('blue');return false;" name="theme" value="Blue Wabbit" id="blue">
+		<input type="submit" onclick="switch_style('red');return false;" name="theme" value="Red Wabbit" id="red">
+	</form>
+
+	<h4 class="red">Cute Wabbit!!!</h4>
+
+	<p class="red">
+		A little girl goes into a pet show and asks for a wabbit. The shop keeper looks down at her, smiles and says:</br></br>
+
+		"Would you like a lovely fluffy little white rabbit, or a cutesy wootesly little brown rabbit?"</br></br>
+
+		"Actually", says the little girl, "I don't think my python would notice."</br></br></br>
+
+		- Nick Leaton, Wed, 04 Dec 1996</p>
+		
+		<input type="submit" onclick="spam_yourself();return false;" name="spam" value="Load more" id="spam">
+	</body>
+
+
+	<script type="text/javascript">
+	function switch_style ( css_title )
+	{
+		debugger;
+		if(css_title === "blue"){
+			$("*").removeClass("red blue");
+			$("*").addClass("blue");
+		} else {
+			$("*").removeClass("red blue");
+			$("*").addClass("red");
+		}
+			
+	}
+
+
+
+function spam_yourself(){
+	var x = document.createElement("p");
+	var t = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum rutrum felis, id dictum metus pharetra eu. Curabitur ornare, tellus i");
+	x.appendChild(t);
+	document.getElementsByTagName('body')[0].appendChild(x);
+}
+</script>
+<link rel="stylesheet" type="text/css" title="blue" href="blue_current.css">
+	<link rel="stylesheet" type="text/css" title="red" href="red_current.css">
+</html>
+
+
+
+
