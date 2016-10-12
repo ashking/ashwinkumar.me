@@ -1,6 +1,6 @@
 name: Ashwin kumar
 markdown: redcarpet
-pygments: true
+highlighter: true
 
 url: "http://ashwinkumar.me"
 baseurl: "/"
